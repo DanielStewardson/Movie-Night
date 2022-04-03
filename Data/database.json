@@ -1,0 +1,94 @@
+{
+    "Users": [
+        {
+            "userId": 0,
+            "name": "Shireen Nicholls",
+            "age": 33,
+            "profilePic": "SN",
+            "friends": ["2", "3", "4"],
+            "watchlist": ["1", "3", "4"]
+        },
+        {
+            "userId": 1,
+            "name": "Amy Calkin",
+            "age": 33,
+            "profilePic": "AC",
+            "friends": ["1", "3"],
+            "watchlist": ["1", "3", "5"]
+        },
+        {
+            "userId": 2,
+            "name": "Daniel Stewardson",
+            "age": 34,
+            "profilePic": "DS",
+            "friends": ["1", "2", "4"],
+            "watchlist": ["1", "2", "4"]
+        },
+        {
+            "userId": 3,
+            "name": "Cameron Bailey",
+            "age": 32,
+            "profilePic": "CB",
+            "friends": ["1", "3"],
+            "watchlist": ["1", "2", "4", "5"]
+        }
+    ],
+
+    "movies": [
+        {
+            "movieId": 1,
+            "title": "The Lord of the Rings, the Fellowship of the Ring",
+            "images": {"poster": "/assets/lotr-fellowship-poster.jpg", "scene1": "/assets/lotr_scene_pic.webp"},
+            "trailer": {"id": "1", "src": "https://www.youtube.com/watch?v=V75dMMIW2B4"},
+            "genre": ["adventure", "action", "fantasy"],
+            "rating": 10,
+            "ageRes": 12,
+            "year": 2001,
+            "actors": ["Ellijah Wood", "Ian McKellen", "Orlando Bloom", "Viggo Mortensen"]
+        },
+        {
+            "movieId": 2,
+            "title": "The Matrix",
+            "images": {"poster": "/assets/matrix-poster.jpg", "scene1": ""},
+            "trailer": {"id": "", "src": ""},
+            "genre": ["adventure", "action", "sci-fi"],
+            "rating": 9,
+            "ageRes": 18,
+            "year": 1999,
+            "actors": ["Keanu Reeves", "Laurence Fishburne"]
+        },
+        {
+            "movieId": 3,
+            "title": "Shrek",
+            "images": {"poster": "/assets/shrek-poster.jpg", "scene1": ""},
+            "trailer": {"id": "", "src": ""},
+            "genre": ["adventure", "comedy", "fantasy", "animated"],
+            "rating": 8,
+            "ageRes": "0",
+            "year": 2001,
+            "actors": ["Mike Myres", "Eddie Murphy"]
+        },
+        {
+            "movieId": 4,
+            "title": "The Guardians of the Galaxy",
+            "images": {"poster": "/assets/gotg-poster.jpg", "scene1": ""},
+            "trailer": {"id": "", "src": ""},
+            "genre": ["adventure", "action", "sci-fi"],
+            "rating": 8,
+            "ageRes": 13,
+            "year": 2014,
+            "actors": ["Chris Pratt", "Dave Bautista", "Vin Diesel"]
+        },
+        {
+            "movieId": 5,
+            "title": "Thor",
+            "images": {"poster": "/assets/thor-poster.jpg", "scene1": ""},
+            "trailer": {"id": "", "src": ""},
+            "genre": ["adventure", "action", "sci-fi"],
+            "rating": 7,
+            "ageRes": 13,
+            "year": 2011,
+            "actors": ["Chris Hemsworth", "Natalie Portman", "Tom Middleston"]
+        }
+    ]
+}

@@ -1,0 +1,79 @@
+.watchlist {
+    width: 100%;
+    margin: 10px auto;
+}
+
+.watchlist h1 {
+    font-size: 40px;
+}
+.watchlist p {
+    font-size: 14px;
+}
+
+.watchlistHeader {
+    margin: 10px 0px;
+}
+
+/* --------------- Sort and Filter --------------- */
+.filterWrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+
+.filterWrapper button {
+    padding: 3px 4px;
+    border: none;
+    color: rgb(245, 241, 238);
+    background-color: hsl(0, 47%, 46%);
+}
+
+/* --------------- Movie list --------------- */
+.watchlistItemsWrapper {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.watchlistCard {
+    display: flex;
+    flex-direction: column;
+    margin: 5px 0.5%;
+    width: 32.33%;
+    max-width: 9rem;
+    height: 24VH;
+    background-color: rgb(135, 135, 184);
+}
+
+.watchlistCard h3 {
+    font-size: 16px;
+}
+
+.watchlistCardText {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-top: auto;
+    padding: 2px 4px 0 4px;
+    /* min-height: 6VH; */
+    height: 6VH;
+    background-color: hsl(0, 0%, 15%);
+}
+
+.watchlistCardTitle {
+    overflow: hidden;
+}
+
+.watchlistCardStars {
+    font-size: 12px;
+    color: hsl(41, 100%, 61%);
+}
+
+@media only screen and (max-height: 720px) {
+    .watchlistCard {
+        height: 30VH;
+    }
+    .watchlistCardText {
+        /* min-height: 7.5VH; */
+        height: 7.5VH;
+    }
+}

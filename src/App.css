@@ -1,0 +1,27 @@
+body, html, li, ul, nav, div, header, img, input, span, h1, h2, h3, h4, h5, p {
+    margin: 0;
+    padding: 0;
+ }
+
+body::-webkit-scrollbar {
+   display: none;
+}
+
+body {
+    background-color: hsl(0, 0%, 12%);
+    color: rgb(245, 241, 238);
+}
+
+html {
+    box-sizing: border-box;
+    font-size: var(--font-size);
+    scroll-behavior: smooth;
+}
+
+.App {
+    /* background-color: hsl(0, 0%, 12%); */
+}
+
+.topSpacerDiv {
+    height: 100px;
+}

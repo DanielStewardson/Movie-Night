@@ -1,0 +1,33 @@
+.accNavWrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: fixed;
+    top: 100px;
+    width: 55%;
+    height: 100%;
+    padding: 10px 0;
+    background-color: hsl(0, 0%, 15%);
+    transition: all .3s ease-in-out;
+}
+
+.accIsActive {
+    left: 45%;
+}
+
+.accNotActive {
+    left: 100%;
+}
+
+.accNavWrapper a {
+    text-decoration: none;
+    padding: 15px 0;
+    font-size: 1.3rem;
+    font-weight: bold;
+    border-bottom: 1px solid hsla(0, 0%, 100%, 8%);
+    color: rgb(245, 241, 238);
+}
+
+.accNavWrapper a:visited {
+    text-decoration: none;
+}

@@ -1,0 +1,33 @@
+.search-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    height: 50px;
+    width: 100%;
+    top: 50px;
+    background-color: hsl(0, 0%, 15%);
+}
+
+.input-wrapper {
+    display: flex;
+    border-radius: 3px;
+    overflow: hidden;
+    background-color: hsl(0, 0%, 28%);
+}
+
+.search-bubble {
+    padding: 2px 0;
+    background-color: hsl(0, 0%, 28%);
+    border: none;
+    font-size: 15px;
+    color: rgb(245, 241, 238);
+}
+
+.search-button {
+    border: none;
+    border-radius: 3px;
+    background-color: hsl(0, 0%, 28%);
+    color: rgb(245, 241, 238);
+    font-size: 15px;
+}
