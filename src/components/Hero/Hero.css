@@ -1,0 +1,47 @@
+/* ------------ Hero not logged in ------------ */
+.logInButtons {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px 0;
+}
+
+.logInButtons button {
+    width: 50%;
+    height: 25px;
+    margin: 10px 0;
+}
+
+.logInButtons a {
+    margin-top: 10px;
+    text-decoration: none;
+    color: hsl(207, 100%, 50%);
+}
+
+/* ------------ Hero logged in ------------ */
+.heroLoggedIn {
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+}
+
+.heroName {
+    display: flex;
+    justify-content: space-between;
+}
+.heroName h1 {
+    font-size: 35px;
+    padding-bottom: 20px;
+}
+
+.heroProfilePic {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 30px;
+    min-width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    background-color: rgb(80, 80, 80);
+}

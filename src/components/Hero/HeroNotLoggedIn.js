@@ -1,5 +1,5 @@
 // import React from "react";
-import './HeroNotLoggedIn.css';
+import './Hero.css';
 
 export const HeroNotLoggedIn = ( {onClick} ) => {
 

@@ -5,32 +5,32 @@
             "name": "Shireen Nicholls",
             "age": 33,
             "profilePic": "SN",
-            "friends": ["2", "3", "4"],
-            "watchlist": ["1", "3", "4"]
+            "friends": [2, 3, 4],
+            "watchlist": [1, 3, 4]
         },
         {
             "userId": 1,
             "name": "Amy Calkin",
             "age": 33,
             "profilePic": "AC",
-            "friends": ["1", "3"],
-            "watchlist": ["1", "3", "5"]
+            "friends": [1, 3],
+            "watchlist": [3, 5]
         },
         {
             "userId": 2,
             "name": "Daniel Stewardson",
             "age": 34,
             "profilePic": "DS",
-            "friends": ["1", "2", "4"],
-            "watchlist": ["1", "2", "4"]
+            "friends": [1, 2, 4],
+            "watchlist": [1, 2, 4]
         },
         {
             "userId": 3,
             "name": "Cameron Bailey",
             "age": 32,
             "profilePic": "CB",
-            "friends": ["1", "3"],
-            "watchlist": ["1", "2", "4", "5"]
+            "friends": [1, 3],
+            "watchlist": [1, 2, 4, 5]
         }
     ],
 

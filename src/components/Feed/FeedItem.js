@@ -1,11 +1,11 @@
 import './Feed.css';
 
-const FeedItem = ({ posts }) => {
+const FeedItem = ({ data }) => {
     return (  
         <div className='sideScrollWrapper'>
-            {posts.map((post) => (
-                <div className='feedItem' key={ post.id }>
-                    { post.body } 
+            {data.map((data) => (
+                <div className='feedItem' key={ data }>
+                    { data } 
                 </div>
             ))}
         </div>

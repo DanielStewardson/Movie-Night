@@ -3,10 +3,10 @@ import './Hero.css';
 import { HeroNotLoggedIn } from "./HeroNotLoggedIn";
 import { HeroLoggedIn } from "./HeroLoggedIn";
 
-export const Hero = ( {onClick, loggedIn} ) => {
+export const Hero = ( {onClick, user} ) => {
 
-    if (loggedIn) {
-        return <HeroLoggedIn />;
+    if (user) {
+        return <HeroLoggedIn user={user} />;
     }
         return <HeroNotLoggedIn onClick={onClick} />;
 }
