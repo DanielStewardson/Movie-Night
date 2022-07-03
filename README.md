@@ -1,6 +1,5 @@
 # Movie Night!
 
----
 
 Movie watchlist app designed to build, save and compare your watchlist with your friends.
 
@@ -16,5 +15,5 @@ Stuck for what to watch? Instantly compare your saved watchlist with the gangs, 
 * Only designing it for mobile view atm. Will add responsivness after logic actually works.
 * Only basic design while building. Will add flavour when working.
 
-(src/movienightscreengrab1.PNG)
-(src/movienightscreengrab2.PNG)
+(/src/movienightscreengrab1.PNG)
+(/src/movienightscreengrab2.PNG)
