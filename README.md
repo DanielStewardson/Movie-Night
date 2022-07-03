@@ -18,8 +18,8 @@ Stuck for what to watch? Instantly compare your saved watchlist with the gangs, 
 * Only basic design while building. Will add flavour when working.
 
 <div align='center'>
-    <img src="/src/movienightscreengrab1.PNG" alt='Login page' width="300">
-    <img src="/src/movienightscreengrab2.PNG" alt='Watchlist page' width="300">
+    <img src="/src/movienightscreengrab1.PNG" alt='Login page' width="260">
+    <img src="/src/movienightscreengrab2.PNG" alt='Watchlist page' width="260">
 </div>
 
 ---
