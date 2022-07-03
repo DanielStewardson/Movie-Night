@@ -15,7 +15,7 @@ Stuck for what to watch? Instantly compare your saved watchlist with the gangs, 
 * Only designing it for mobile view atm. Will add responsivness after logic actually works.
 * Only basic design while building. Will add flavour when working.
 
-<img src="/src/movienightscreengrab1.PNG" width="100">
-
-![Movie Night login page](/src/movienightscreengrab1.PNG)
-![Movie night watchlist page](/src/movienightscreengrab2.PNG)
+<div align='center'>
+    <img src="/src/movienightscreengrab1.PNG" alt='Login page' width="300">
+    <img src="/src/movienightscreengrab2.PNG" alt='Watchlist page' width="300">
+</div>
