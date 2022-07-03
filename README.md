@@ -20,7 +20,7 @@ Stuck for what to watch? Instantly compare your saved watchlist with the gangs, 
 <div align='center'>
     <img src="/src/movienightscreengrab1.PNG" alt='Login page' width="250">
     <img src="/src/movienightscreengrab2.PNG" alt='Watchlist page' width="250">
-    <img src="/src/movienightscreengrab3.PNG" alt='Watchlist page' width="250">
+    <img src="/src/movienightscreengrab3.PNG" alt='User menu' width="250">
 </div>
 
 ---
