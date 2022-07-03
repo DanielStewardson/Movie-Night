@@ -1,36 +1,48 @@
-import { useEffect } from 'react';
 import './Watchlist.css';
 import WatchlistCard from './WatchlistCard';
+import React, { useState } from 'react';
 
-const Watchlist = ( { user } ) => {
+const Watchlist = ( { user, data } ) => {
 
-    const tempData = {
-        userId: 1,
-        userName: 'Shireen',
-        friends: [],
-        watchlist: ['The Matrix', 'Harry Potter and the Chamber of Secrets', 'The Guardians of the Galaxy', 'Thor', 'The Lord of the Rings, the Fellowship of the Ring', 'Movie 6', 'Movie 7', 'Movie 8',
-        'Movie 9','Movie 10','Movie 11','Movie 12','Movie 13','Movie 14','Movie 15','Movie 16']
-        };
+    const fullName = user.name.split(' ');
 
-    const fullName = tempData.userName.split(' ');
+    const userWatchlist = data.filter(movie => user.watchlist.includes(movie.movieId));
 
-    useEffect(() => {
+    const [watchlist, setWatchlist] = useState(userWatchlist);
 
-    }, []);
+    const [genre, setGenre] = useState('default');
+    const genreSelect = (e) => {
+        console.log(e.target.value);
+        if (e.target.value === 'all') {
+            setGenre('default');
+            setWatchlist(userWatchlist);
+            return;
+        }
+        setGenre(e.target.value);
+        setWatchlist(userWatchlist.filter(movie => movie.genre.includes(e.target.value)));
+    }
 
     return ( 
         <div className='watchlist'>
             <div className='watchlistHeader'>
                 <h1>{ fullName[0] }'s watchlist</h1>
                 <br></br>
-                <p>Movies: { tempData.watchlist.length }</p>
-                <p>Friend matches: 64</p>
+                <div className='heroStats'>
+                    <h3>Movies: { user.watchlist.length }</h3>
+                    <h3>Friend matches: ---</h3>
+                </div>
                 <div className='filterWrapper'>
-                    <button>Compare with friends</button>
-                    <p>Add filter/sort here</p>
+                    <button><h3>Compare with friends</h3></button>
+                    <select name='genreSelect' id='genreSelect' value={ genre } onChange={ genreSelect }>
+                        <option value='default' disabled hidden>Genre</option>
+                        <option value='all'>All</option>
+                        <option value='adventure'>Adventure</option>
+                        <option value='comedy'>Comedy</option>
+                        <option value='fantasy'>Fantasy</option>
+                    </select>
                 </div>
             </div>
-            <WatchlistCard data={tempData} />
+            <WatchlistCard data={ watchlist } />
         </div>
      );
 }

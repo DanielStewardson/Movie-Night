@@ -4,16 +4,18 @@ const WatchlistCard = ( { data } ) => {
 
     return ( 
         <div className='watchlistItemsWrapper'>
-            {data.watchlist.map((movie) => (
-                <div className='watchlistCard' key={movie}>
+            {data.map((movie) => (
+                <div className='watchlistCard' key={ movie.movieId }>
                     <div className='watchlistCardImage'>
-                        Image here
+                        <img src={ movie.images.poster } alt=''></img>
                     </div>
                     <div className='watchlistCardText'>
                         <div className='watchlistCardTitle'>
-                            <h3>{ movie }</h3>
+                            <h3>{ movie.title }</h3>
                         </div>
-                    <div className='watchlistCardStars'>* * * * * * *</div> {/*Change to dynamic rating*/}
+                        <div className='watchlistCardStars'> 
+                            { movie.rating }/10 
+                        </div>
                     </div>
                 </div>
             ))}

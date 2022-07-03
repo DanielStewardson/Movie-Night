@@ -19,6 +19,15 @@ html {
     scroll-behavior: smooth;
 }
 
+a {
+    text-decoration: none;
+    color: rgb(245, 241, 238)
+}
+
+a:visited {
+    text-decoration: none;
+}
+
 .App {
     /* background-color: hsl(0, 0%, 12%); */
 }
@@ -26,3 +35,4 @@ html {
 .topSpacerDiv {
     height: 100px;
 }
+

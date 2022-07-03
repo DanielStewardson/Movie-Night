@@ -1,22 +1,15 @@
-import { Link } from 'react-router-dom';
-import './AccountNavBar.css';
+import './Navbar.css';
+import { NavLinkList } from './NavLinkList';
 
-export const AccountNavBar = ({ isActive }) => {
+export const AccountNavBar = ({ isActive, onClick, handleLogOut }) => {
 
     //Add if searchbar open top comes down or up in height to match
-    //If other side nav is opened close this one
+    const navItems = ['My Watchlist', 'My Reviews', 'Friends', 'Movie Night', 'My Recommended',
+     'Profile', 'Log Out'];
 
     return (
-        <div className={`accNavWrapper ${isActive ? 'accIsActive' : 'accNotActive'}`} >
-            <Link to='/myWatchlist'>My Watchlist</Link>
-            <Link>My Reviews</Link>
-            <Link>Friends</Link>
-            <Link>Movie Night</Link>
-            <Link>My Recommended</Link>
-            <Link>Profile</Link>
-            <Link>Log out</Link>
+        <div className={`${isActive ? 'accIsActive' : 'accNotActive'}`} >
+            <NavLinkList links={ navItems } onClick={ onClick } isActive={ isActive } handleLogOut={ handleLogOut } />
         </div>
     )
 }
-
-<a href='/google.com'>Link to google</a>

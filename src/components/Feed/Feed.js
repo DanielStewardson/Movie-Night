@@ -1,14 +1,14 @@
 import './Feed.css';
-// import React, { useState } from 'react';
 import GeneralFeed from './GeneralFeed';
 import UserFeed from './UserFeed';
+import Loading from '../Messages/Loading';
 
 export const Feed = ({ user, data, pending }) => {
 
    if (user) {
        return (
         <div>
-            {pending && <h1>Loading..</h1>}
+            {pending && <Loading />}
             {data && <UserFeed user={ user } data={ data } />}
         </div>
        )

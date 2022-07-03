@@ -45,3 +45,11 @@
     border-radius: 50%;
     background-color: rgb(80, 80, 80);
 }
+
+.heroStats {
+    display: flex;
+    flex-direction: column;
+}
+.heroStats h3 {
+    margin: 2px 0;
+}

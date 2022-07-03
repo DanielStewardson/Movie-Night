@@ -38,3 +38,48 @@
     font-size: 35px;
     letter-spacing: 1.3px;
 }
+
+/* ------------------- Nav sidebars ------------------- */
+.sideNavWrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: fixed;
+    z-index: 10;
+    top: 100px;
+    width: 55%;
+    height: 100%;
+    padding: 10px 0;
+    background-color: hsl(0, 0%, 15%);
+    transition: all .3s ease-in-out;
+}
+
+.sideNavWrapper a, p {
+    text-decoration: none;
+    padding: 15px 0;
+    font-size: 1.3rem;
+    font-weight: bold;
+    border-bottom: 1px solid hsla(0, 0%, 100%, 8%);
+    color: rgb(245, 241, 238);
+}
+
+.sideNavWrapper a:visited {
+    text-decoration: none;
+}
+
+/* ------------------- Account Nav sidebar ------------------- */
+.accIsActive div {
+    left: 45%;
+}
+
+.accNotActive div {
+    left: 100%;
+}
+
+/* ------------------- Main Nav sidebar ------------------- */
+.mainIsActive div {
+    right: 45%;
+}
+.mainNotActive div {
+    right: 100%;
+}

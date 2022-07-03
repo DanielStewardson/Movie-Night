@@ -9,7 +9,7 @@ import Watchlist from './components/Watchlist/Watchlist';
 function App() {
 
   const [user, setUser] = useState(null);
-  const logIn = (userLog) => {
+  const logIn = (userLog) => { //Set user log in
     fetch('http://localhost:8000/Users')
     .then(response => {
       return response.json()
@@ -20,20 +20,31 @@ function App() {
     })
   }
 
-  const [fetchPending, setFetchPending] = useState(true);
+  const logOut = () => {
+    setUser(null);
+    setData(null);
+    setFetchPending(true);
+  }
 
-  const [data, setData] = useState(null);
+  const [fetchPending, setFetchPending] = useState(true); //used for loading messages
+
+  const [data, setData] = useState(null); //Set movie data
+
   useEffect(() => {
     if (user) {
-      fetch('http://localhost:8000/movies')
-      .then(response => {
-          return response.json();
-      })
-      .then(data => {
-          console.log(data);
-          setData(data);
-          setFetchPending(false);
-      })
+       /* ----------------- Set timeout to simulate fetch time ----------------- */
+        /* ----------------- Move this to make calls in right places? ----------------- */
+      setTimeout(() => {
+        fetch('http://localhost:8000/movies')
+        .then(response => {
+            return response.json();
+        })
+        .then(data => {
+            console.log(data);
+            setData(data);
+            setFetchPending(false);
+        })
+      }, 2000);
     }
   }, [user]);
  
@@ -42,18 +53,18 @@ function App() {
     <Router>
       <div className="App">
           {/* ----------------- Navigation ----------------- */}
-        <NavBar user={ user } onClick={ logIn } />
+        <NavBar user={ user } onClick={ logIn } logOut={ logOut } />
           <div className='topSpacerDiv'>
              {/* --- Spacer div --- */}
           </div>
           {/* ----------------- Content ----------------- */}
-        <Switch >
-          <Route exact path='/'>
+        <Switch>
+          <Route exact path='/home'>
             <Hero onClick={ logIn } user={ user } />
             <Feed user={ user } data={ data } pending={ fetchPending } />
           </Route>
           <Route exact path='/myWatchlist'>
-            <Watchlist user={ user } />
+           <Watchlist user={ user } data={ data } />
           </Route>
         </Switch>
       </div>

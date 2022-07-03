@@ -38,7 +38,7 @@
         {
             "movieId": 1,
             "title": "The Lord of the Rings, the Fellowship of the Ring",
-            "images": {"poster": "/assets/lotr-fellowship-poster.jpg", "scene1": "/assets/lotr_scene_pic.webp"},
+            "images": {"poster": "https://cdn.europosters.eu/image/1300/posters/lord-of-the-rings-fellowship-i11723.jpg", "scene1": "/assets/lotr_scene_pic.webp"},
             "trailer": {"id": "1", "src": "https://www.youtube.com/watch?v=V75dMMIW2B4"},
             "genre": ["adventure", "action", "fantasy"],
             "rating": 10,
@@ -49,7 +49,7 @@
         {
             "movieId": 2,
             "title": "The Matrix",
-            "images": {"poster": "/assets/matrix-poster.jpg", "scene1": ""},
+            "images": {"poster": "https://m.media-amazon.com/images/M/MV5BNzQzOTk3OTAtNDQ0Zi00ZTVkLWI0MTEtMDllZjNkYzNjNTc4L2ltYWdlXkEyXkFqcGdeQXVyNjU0OTQ0OTY@._V1_.jpg", "scene1": ""},
             "trailer": {"id": "", "src": ""},
             "genre": ["adventure", "action", "sci-fi"],
             "rating": 9,
@@ -60,7 +60,7 @@
         {
             "movieId": 3,
             "title": "Shrek",
-            "images": {"poster": "/assets/shrek-poster.jpg", "scene1": ""},
+            "images": {"poster": "https://image.tmdb.org/t/p/original/dyhaB19AICF7TO7CK2aD6KfymnQ.jpg", "scene1": ""},
             "trailer": {"id": "", "src": ""},
             "genre": ["adventure", "comedy", "fantasy", "animated"],
             "rating": 8,
@@ -71,7 +71,7 @@
         {
             "movieId": 4,
             "title": "The Guardians of the Galaxy",
-            "images": {"poster": "/assets/gotg-poster.jpg", "scene1": ""},
+            "images": {"poster": "https://m.media-amazon.com/images/M/MV5BMTAwMjU5OTgxNjZeQTJeQWpwZ15BbWU4MDUxNDYxODEx._V1_.jpg", "scene1": ""},
             "trailer": {"id": "", "src": ""},
             "genre": ["adventure", "action", "sci-fi"],
             "rating": 8,
@@ -82,7 +82,7 @@
         {
             "movieId": 5,
             "title": "Thor",
-            "images": {"poster": "/assets/thor-poster.jpg", "scene1": ""},
+            "images": {"poster": "https://www.previewsworld.com/SiteImage/MainImage/STL206012.jpg", "scene1": ""},
             "trailer": {"id": "", "src": ""},
             "genre": ["adventure", "action", "sci-fi"],
             "rating": 7,

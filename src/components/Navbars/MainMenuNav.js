@@ -1,21 +1,15 @@
-import { Link } from 'react-router-dom';
-import './MainMenuNav.css';
+import './Navbar.css';
+import { NavLinkList } from './NavLinkList';
 
-export const MainMenuNav = ({ isActive }) => {
+export const MainMenuNav = ({ isActive, onClick }) => {
 
-    //Add if searchbar open top comes down or up in height to match
-    //If other side nav is opened close this one
+    //Add if searchbar open, top comes down or up in height to match
+    const navItems = ['Home', 'Browse Movies', 'Trending', 'Latest Trailers', 'Coming Soon',
+     'Showtimes & Tickets', 'Top Rated', 'Movie News'];
 
     return (
-        <div className={`mainNavWrapper ${isActive ? 'mainIsActive' : 'mainNotActive'}`} >
-            <Link to='/'>Home</Link>
-            <Link>Browse Movies</Link>
-            <Link>Trending</Link>
-            <Link>Latest Trailers</Link>
-            <Link>Coming Soon</Link>
-            <Link>Showtimes {'&'} Tickets</Link>
-            <Link>Top Rated</Link>
-            <Link>Movie News</Link>
+        <div className={`${isActive ? 'mainIsActive' : 'mainNotActive'}`}>
+            <NavLinkList links={ navItems } onClick={ onClick } isActive={ isActive }/>
         </div>
     )
 }

@@ -16,9 +16,11 @@
     scroll-padding: 7.5%;
 }
 
+@media (hover: none) {
 .sideScrollWrapper::-webkit-scrollbar {
     display: none;
   }
+}
 
 .feedItem {
     display: flex;
